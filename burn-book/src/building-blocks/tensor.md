@@ -21,7 +21,7 @@ The actual shape of the tensor is inferred from its initialization. For example,
 let floats = [1.0, 2.0, 3.0, 4.0, 5.0];
 
 // Get the default device
-let device = Default::default();
+let device = Device::default();
 
 // correct: Tensor is 1-Dimensional with 5 elements
 let tensor_1 = Tensor::<Backend, 1>::from_floats(floats, &device);
